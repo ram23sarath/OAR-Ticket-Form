@@ -4,11 +4,64 @@
   <meta charset="UTF-8">
   <title>OAR Ticket Review Form</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    h2 { color: #2c3e50; }
-    .section { margin-bottom: 30px; padding: 15px; border: 1px solid #ccc; border-radius: 8px; }
-    label { display: block; margin: 10px 0 5px; font-weight: bold; }
-    select, textarea { width: 100%; padding: 8px; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 32px 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    h1, h2, h3 {
+      color: #333;
+      margin-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding: 24px 18px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      background: #fafbfc;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #555;
+      font-weight: 500;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    input:focus, textarea:focus, select:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
