@@ -6,61 +6,80 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
+      background-color: #f3f6fb;
       margin: 0;
       padding: 0;
     }
     .container {
-      max-width: 500px;
+      max-width: 540px;
       margin: 40px auto;
       background: #fff;
       padding: 32px 24px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,64,0.10);
+      border: 1px solid #e3e6ef;
     }
-    h1, h2, h3 {
-      color: #333;
+    h1 {
+      color: #1a1a2a;
+      background: linear-gradient(90deg, #003A9B 60%, #0057B8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2.2em;
+      margin-bottom: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    h2, h3 {
+      color: #003A9B;
       margin-bottom: 16px;
     }
     .section {
       margin-bottom: 30px;
       padding: 24px 18px;
-      border: 1px solid #e0e0e0;
+      border: 1px solid #003A9B;
       border-radius: 8px;
-      background: #fafbfc;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+      background: #f7f9fc;
+      box-shadow: 0 1px 4px rgba(0,58,155,0.06);
     }
     label {
       display: block;
       margin-bottom: 8px;
-      color: #555;
+      color: #1a1a2a;
       font-weight: 500;
     }
     input, textarea, select {
       width: 100%;
       padding: 10px;
       margin-bottom: 18px;
-      border: 1px solid #ccc;
+      border: 1px solid #003A9B;
       border-radius: 4px;
       font-size: 16px;
       box-sizing: border-box;
+      background: #f3f6fb;
+      color: #1a1a2a;
+      transition: border-color 0.2s;
     }
     input:focus, textarea:focus, select:focus {
-      border-color: #007bff;
+      border-color: #0057B8;
       outline: none;
+      background: #eaf1fb;
     }
     button {
-      background-color: #007bff;
+      background-color: #003A9B;
       color: #fff;
       border: none;
       padding: 12px 24px;
       border-radius: 4px;
       font-size: 16px;
       cursor: pointer;
-      transition: background 0.2s;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 6px rgba(0,58,155,0.10);
+      transition: background 0.2s, box-shadow 0.2s;
     }
     button:hover {
-      background-color: #0056b3;
+      background-color: #0057B8;
+      box-shadow: 0 4px 12px rgba(0,87,184,0.15);
     }
   </style>
 </head>
@@ -71,9 +90,10 @@
     <!-- Section: Communication -->
     <div class="section">
       <h2>Communication</h2>
-      <label>Accurate Information</label>
+      <label>Accurate Information: Did the team member provide the most accurate and relevant information to the client / AE?</label>
       <select name="accurate-info">
-        <option>Yes</option><option>No</option><option>N/A</option>
+        <option>Yes</option>
+        <option>No</option>
       </select>
 
 
